@@ -12,7 +12,7 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="page-navigation">
-          <div class="page-navigation__wrapper container">
+          <div class="page-navigation__wrapper container" itemscope itemtype="http://schema.org/Organization">
             <div class="page-navigation__logo">
               <img
                 src="img/svg/logo-blue.svg"
@@ -20,7 +20,15 @@
                 height="50"
                 alt="Логотип ТД Гидравлика-М"
               />
-              <h2 class="page-navigation__title">ТД ГИДРАВЛИКА-М</h2>
+              <h2 class="page-navigation__title" itemprop="name">ТД ГИДРАВЛИКА-М</h2>
+            </div>
+            <div class="visually-hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span>Адрес</span>
+              <span itemprop="streetAddress">улица им. Лавренева, 19Д</span>
+              <span itemprop="postalCode">400006</span>
+              <span itemprop="addressLocality">Волгоград</span>
+              Телефон:<span itemprop="telephone">+7 960 872-66-22, +7 961 079-32-09 </span>
+              Электронная почта: <span itemprop="email">gidravlika-m@mail.ru</span>
             </div>
             <div class="page-navigation__links">
               <ul>
@@ -48,22 +56,27 @@
             <button class="page-navigation__button">Наши услуги</button>
           </div>
         </nav>
-        <div class="page-header__wrapper container">
-          <h1 class="page-header__title">
+        <div class="page-header__wrapper container" itemscope itemtype="http://schema.org/Product">
+          <h1 class="page-header__title" itemprop="name">
             Ремонт гидравлики<br />и спецтехники в Волгограде
           </h1>
-          <ul class="page-header__list">
+          <div class="visually-hidden" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+            <meta itemprop="price" content="2700">
+            <meta itemprop="priceCurrency" content="RUB">
+          </div>
+          <div itemprop="description" class="visually-hidden">Минимальная стоимость ремонта</div>
+          <ul class="page-header__list" itemscope itemtype="https://schema.org/OfferCatalog">
             <li class="page-header__item page-header__item-service">
-              <a href="#">Ремонт и сервис спецтехники</a>
+              <a href="#"><span  itemprop="name">Ремонт и сервис спецтехники</span></a>
             </li>
             <li class="page-header__item page-header__item-repair">
-              <a href="#"> Ремонт гидрооборудования </a>
+              <a href="#"><span itemprop="name">Ремонт гидрооборудования</span></a>
             </li>
             <li class="page-header__item page-header__item-rvd">
-              <a href="#"> Изготовление РВД </a>
+              <a href="#"><span itemprop="name"> Изготовление РВД </span></a>
             </li>
             <li class="page-header__item page-header__item-diag">
-              <a href="#"> Диагностика </a>
+              <a href="#"><span itemprop="name"> Диагностика </span></a>
             </li>
           </ul>
         </div>
