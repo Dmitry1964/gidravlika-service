@@ -1,0 +1,124 @@
+.page-header {
+  min-height: 810px;
+  background-image: url("../img/banner/banner-1440.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include vp-1023 {
+    background-image: url("../img/banner/banner-1023.jpg");
+    min-height: 580px;
+  }
+
+  @include vp-767 {
+    background-image: url("../img/banner/banner-767.jpg");
+    min-height: 360px;
+    padding-bottom: 20px;
+  }
+
+  // @include vp-374 {
+  //   background-image: url("../img/banner/banner320.jpg");
+  //   min-height: 240px;
+  // }
+}
+
+.page-header__title {
+  font-family: "PT Sans Narrow";
+  font-size: 64px;
+  line-height: 96px;
+  color: $color-ultramarine;
+  margin: 90px 0 0 80px;
+
+  @include vp-1023 {
+    font-size: 56px;
+    line-height: 84px;
+    margin: 20px 0 0 50px
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 20px 0 0 0;
+  }
+
+  @include vp-374 {
+    font-size: 24px;
+    line-height: 36px;
+    margin: 10px 0 0 0;
+
+  }
+}
+
+.page-header__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  margin: 230px 0 0 80px;
+  padding: 0;
+
+  @include vp-1023 {
+    margin: 150px 0 0 50px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 100px 0 0 0;
+  }
+
+  @include vp-374 {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+}
+
+.page-header__item {
+  padding: 10px;
+
+  &-service {
+    background-color: $color-perano;
+  }
+
+  &-repair {
+    background-color: $color-spray;
+  }
+
+  &-rvd {
+    background-color: $color-olivine;
+  }
+
+  &-diag {
+    background-color: $color-egg-blue;
+  }
+
+  @include vp-767 {
+    padding: 0 10px;
+  }
+
+  @include vp-374 {
+    width: 70%;
+  }
+}
+
+.page-header__item a {
+  color: $color-ultramarine;
+  font-size: 18px;
+  line-height: 27px;
+
+  @include vp-1023 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+    list-style: 21px;
+  }
+
+  @include vp-374 {
+    font-size: 12px;
+    list-style: 18px;
+  }
+
+}
