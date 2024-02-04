@@ -12,23 +12,34 @@
     <div class="wrapper">
       <header class="page-header">
         <nav class="page-navigation">
-          <div class="page-navigation__wrapper container" itemscope itemtype="http://schema.org/Organization">
+          <div
+            class="page-navigation__wrapper container"
+            itemscope
+            itemtype="http://schema.org/Organization">
             <div class="page-navigation__logo">
               <img
                 src="img/svg/logo-blue.svg"
                 width="50"
                 height="50"
-                alt="Логотип ТД Гидравлика-М"
-              />
-              <h2 class="page-navigation__title" itemprop="name">ТД ГИДРАВЛИКА-М</h2>
+                alt="Логотип ТД Гидравлика-М" />
+              <h2 class="page-navigation__title" itemprop="name">
+                ТД ГИДРАВЛИКА-М
+              </h2>
             </div>
-            <div class="visually-hidden" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <div
+              class="visually-hidden"
+              itemprop="address"
+              itemscope
+              itemtype="http://schema.org/PostalAddress">
               <span>Адрес</span>
               <span itemprop="streetAddress">улица им. Лавренева, 19Д</span>
               <span itemprop="postalCode">400006</span>
               <span itemprop="addressLocality">Волгоград</span>
-              Телефон:<span itemprop="telephone">+7 960 872-66-22, +7 961 079-32-09 </span>
-              Электронная почта: <span itemprop="email">gidravlika-m@mail.ru</span>
+              Телефон:<span itemprop="telephone">+7 960 872-66-22, +7 961
+                079-32-09
+              </span>
+              Электронная почта:
+              <span itemprop="email">gidravlika-m@mail.ru</span>
             </div>
             <div class="page-navigation__links">
               <ul>
@@ -46,8 +57,7 @@
                 srcset="img/clock@2x.png 2x"
                 width="35"
                 height="35"
-                alt="Иконка часов"
-              />
+                alt="Иконка часов" />
               <div class="page-navigation__time">
                 <span>Работаем: Пн-Пт</span>
                 <span>8-00 : 16-30</span>
@@ -56,18 +66,30 @@
             <button class="page-navigation__button">Наши услуги</button>
           </div>
         </nav>
-        <div class="page-header__wrapper container" itemscope itemtype="http://schema.org/Product">
+        <section
+          class="page-header__wrapper container"
+          itemscope
+          itemtype="http://schema.org/Product">
           <h1 class="page-header__title" itemprop="name">
             Ремонт гидравлики<br />и спецтехники в Волгограде
           </h1>
-          <div class="visually-hidden" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
-            <meta itemprop="price" content="2700">
-            <meta itemprop="priceCurrency" content="RUB">
+          <div
+            class="visually-hidden"
+            itemprop="offers"
+            itemscope
+            itemtype="https://schema.org/Offer">
+            <meta itemprop="price" content="2700" />
+            <meta itemprop="priceCurrency" content="RUB" />
           </div>
-          <div itemprop="description" class="visually-hidden">Минимальная стоимость ремонта</div>
-          <ul class="page-header__list" itemscope itemtype="https://schema.org/OfferCatalog">
+          <div itemprop="description" class="visually-hidden">
+            Минимальная стоимость ремонта
+          </div>
+          <ul
+            class="page-header__list"
+            itemscope
+            itemtype="https://schema.org/OfferCatalog">
             <li class="page-header__item page-header__item-service">
-              <a href="#"><span  itemprop="name">Ремонт и сервис спецтехники</span></a>
+              <a href="#"><span itemprop="name">Ремонт и сервис спецтехники</span></a>
             </li>
             <li class="page-header__item page-header__item-repair">
               <a href="#"><span itemprop="name">Ремонт гидрооборудования</span></a>
@@ -79,10 +101,30 @@
               <a href="#"><span itemprop="name"> Диагностика </span></a>
             </li>
           </ul>
-        </div>
+        </section>
+
       </header>
       <main>
-        <div class="container">sdsdsds</div>
+        <section class="phones">
+          <div class="phones__wrapper container">
+            <div class="phones__service">
+              <h2 class="phones__header">Ремонт и сервис спецтехники</h2>
+              <div class="phones__button phones__button--service">
+                <img src="img/svg/icon-phone-service.svg" width="40" height="40" alt="Иконка телефон">
+                <a class="phones__link" href="tel:+79610793209">+7 961-079-32-09</a>
+              </div>
+            </div>
+            <div class="phones__repair">
+              <h2 class="phones__header">Ремонт гидрооборудования</h2>
+              <div class="phones__button phones__button--repair">
+                <img src="img/svg/icon-phone-repair.svg" width="40" height="40" alt="Иконка телефон">
+                <a class="phones__link" href="tel:+79608726622">+7 960-872-66-22</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="container"></div>
       </main>
     </div>
     <!-- Модалки -->
@@ -95,8 +137,7 @@
             class="modal__close-btn btn-reset"
             type="button"
             aria-label="Закрыть попап"
-            data-close-modal
-          >
+            data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>
@@ -107,8 +148,7 @@
 
     <div
       class="modal modal--preload modal--fit-content modal--no-scale"
-      data-modal="success"
-    >
+      data-modal="success">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
         <div class="modal__content">
@@ -120,8 +160,7 @@
             class="modal__close-btn btn-reset"
             type="button"
             aria-label="Закрыть попап"
-            data-close-modal
-          >
+            data-close-modal>
             <svg width="15" height="15">
               <use xlink:href="img/sprite_auto.svg#icon-close"></use>
             </svg>

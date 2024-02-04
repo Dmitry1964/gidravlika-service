@@ -1,0 +1,53 @@
+.phones {
+  background-color: $color-new-midnight-blue;
+  padding: 20px 0;
+}
+
+.phones__wrapper {
+  display: flex;
+  gap: 50px
+}
+
+.phones__service,
+.phones__repair {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.phones__service {
+  margin-left: 80px;
+}
+
+.phones__header {
+  font-size: 20px;
+  line-height: 26px;
+  color: $color-link-water;
+  margin: 0;
+}
+
+.phones__link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  color: $color-new-midnight-blue;
+}
+
+.phones__button {
+  display: flex;
+  align-items: center;
+  padding-right: 15px;
+  border-radius: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--service {
+    background-color: $color-perano;
+  }
+
+  &--repair {
+    background-color: $color-spray;
+  }
+}
